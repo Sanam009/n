@@ -1,0 +1,33 @@
+.socal .socBox {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.socal .socBox i {
+    margin-right: 20px;
+}
+
+.socal .socBox span {
+    font-weight: 500;
+}
+
+.socal .socBox:nth-child(1) {
+    background-color: #3b5998;
+}
+
+.socal .socBox:nth-child(2) {
+    background-color: red;
+}
+
+.socal .socBox:nth-child(3) {
+    background-color: #1da1f2;
+}
+
+.socal .socBox:nth-child(4) {
+    background-color: #dd6ec5;
+}
+
+.socal .socBox:nth-child(5) {
+    background-color: #e61e1e;
+}
