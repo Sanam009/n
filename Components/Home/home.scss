@@ -1,0 +1,185 @@
+:root {
+  /* Colors */
+  --primary-color: hsl(199, 100%, 33%);
+  --secondary-color: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: #ffffff;
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --cardBG: rgb(255, 255, 255);
+
+  /* Backgrounds */
+  --bodyColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+}
+
+.home {
+  height: 80vh; /* Adjust the height as needed */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: hard-light;
+    background: rgb(128, 159, 170); /* Adjust overlay opacity as needed */
+    z-index: 1;
+  }
+
+  .homeContent {
+    height: max-content;
+    padding: 8rem 1.5rem 3rem;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 3rem;
+    margin: auto;
+    color: var(--whiteColor);
+    position: relative;
+
+    .textDiv {
+      padding: 2rem 0;
+
+      .smallText {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left: 390px;
+        font-weight: 1000;
+        color: var(--inputColor);
+      }
+
+      .homeTitle {
+        font-size: 2.6rem;
+        margin-top: 0.5rem;
+        margin-left: 390px;
+      }
+    }
+
+    .cardDiv {
+      position: relative;
+      width: 700px; /* Adjust this width as needed */
+      padding: 1rem;
+      background: var(--whiteColor);
+      border-radius: 10px;
+      gap: 1rem;
+      height: 120px;
+      margin: auto;
+      margin-top: -60px;
+      display: flex;
+      flex-wrap: wrap; /* Ensure items wrap if needed */
+      align-items: center;
+      justify-content: space-around; /* Evenly distribute items */
+  
+      label {
+          display: block;
+          color: var(--textColor);
+          padding-bottom: 10px;
+          font-size: 13px;
+          font-weight: 500;
+      }
+  
+      .label_total {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          .total {
+              color: var(--textColor);
+              font-size: 18px;
+              padding-bottom: 10px;
+          }
+      }
+  
+      .input {
+          height: 40px;
+          padding: 0 1rem;
+          background: var(--inputColor);
+          border-radius: 3rem;
+          display: flex;
+          align-items: center;
+  
+          input {
+              background: none;
+              border: none;
+              outline: none;
+              width: 100%;
+              font-size: 13px;
+              font-weight: 500;
+  
+              &::placeholder {
+                  font-size: 13px;
+              }
+          }
+  
+          .icon {
+              font-size: 18px;
+              color: var(--primary-color) !important;
+              margin-left: 10px;
+          }
+  
+          input[type=range] {
+              width: 100%;
+          }
+      }
+
+      .searchOptions {
+          background: var(--gradientColor);
+          margin-top: -10px;
+          bottom: -0.7rem;
+         
+          padding: 5px 1rem;
+          border-radius: 3rem;
+        
+          justify-content: center;
+          align-items: center;
+          
+      }
+  }
+
+  .homeFooterIcons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    .rightIcons {
+      margin-left: 380px;
+    }
+
+    .leftIcons {
+      margin-left: 1030px;
+      margin-top: -30px;
+    }
+
+    .icon {
+      font-size: 20px;
+      margin: 0 5px;
+      color: var(--whiteColor);
+      font-weight: 600;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+}
